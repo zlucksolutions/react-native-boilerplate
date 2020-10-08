@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {Button, View, Text} from 'react-native';
+import { Button, View, Text } from 'react-native';
 import styles from './Styles/DetailStyle';
 
 export interface Props {
   navigation: any;
 }
 
-const DetailScreen = ({navigation}: Props) => {
+const DetailScreen = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <Text>Detail Screen</Text>

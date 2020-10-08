@@ -10,11 +10,11 @@ import {
   Dimensions,
   // Text,
   // TextInput,
-  LogBox,
+  LogBox
 } from 'react-native';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import store from './store';
 import AppNavigation from './navigation/AppNavigation';
 import Styles from './theme/AppStyles';
@@ -29,9 +29,9 @@ import Styles from './theme/AppStyles';
 
 LogBox.ignoreAllLogs();
 
-const {width} = Dimensions.get('window');
+const { width } = Dimensions.get('window');
 
-EStyleSheet.build({$rem: width / 375});
+EStyleSheet.build({ $rem: width / 375 });
 
 // Disable font scaling
 // Text.defaultProps = Text.defaultProps || {};

@@ -1,12 +1,12 @@
 import * as React from 'react';
-import {Button, View, Text} from 'react-native';
+import { Button, View, Text } from 'react-native';
 import styles from './Styles/HomeStyle';
 
 export interface Props {
   navigation: any;
 }
 
-const HomeScreen = ({navigation}: Props) => {
+const HomeScreen = ({ navigation }: Props) => {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
