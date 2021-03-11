@@ -3,7 +3,7 @@
 ## Project Installation
 ### 1. Git checkout / clone project
 ```sh
-$ git clone https://gitlab.com/zluck/mobile/react-native/zluck-rn.git <ProjectName>
+$ git clone https://gitlab.com/zluck/mobile/react-native/zluck-rn-v2.git <ProjectName>
 $ cd <ProjectName>
 ```
 ### 2. Rename Project  
@@ -18,7 +18,7 @@ $ npx react-native-rename <ProjectName> -b <bundleIdentifier>
 ```
 ### 3. Link react native libs and assets
 ```sh
-react-native link
+npx react-native link
 ```
 ### 4. Install node modules / libraries
 ```sh
@@ -28,7 +28,7 @@ $ npm install
 ```
 ### 5. Pod install
 ```sh
-npx pod-install
+npx pod-install ios
 ```
 ### 6. Run Project
 
@@ -145,7 +145,7 @@ Run the following commands in a Terminal at root of source directory:
 ``` bash
 $ cd {APP_NAME}
 $ yarn
-$ npx pod-install
+$ npx pod-install ios
 ```
 
 ## Run
