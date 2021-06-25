@@ -20,14 +20,6 @@ import AppNavigation from './navigation/AppNavigation';
 import { navigationRef, isReadyRef } from './navigation/ReduxNavigation';
 import Styles from './theme/AppStyles';
 
-// import KeyboardManager from 'react-native-keyboard-manager';
-// if (Platform.OS === 'ios') {
-//   KeyboardManager.setEnableAutoToolbar(true);
-//   KeyboardManager.setToolbarDoneBarButtonItemText('Done');
-//   KeyboardManager.setShouldShowToolbarPlaceholder(false);
-//   KeyboardManager.setShouldToolbarUsesTextFieldTintColor(true);
-// }
-
 LogBox.ignoreAllLogs();
 
 const { width } = Dimensions.get('window');
