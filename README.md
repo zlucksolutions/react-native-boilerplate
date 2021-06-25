@@ -129,7 +129,7 @@ $ sudo gem install cocoapods
 ### Git Checkout
 
 ```base
-git clone https://gitlab.com/{companyname or username}/{app-name}.git {APP_NAME}
+git clone https://<username>@github.com/<repo>.git {APP_NAME}
 ```
 For latest code, please checkout branch `develop`
 
