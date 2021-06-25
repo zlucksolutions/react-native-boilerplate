@@ -2,7 +2,8 @@
   "name": "ZluckRN",
   "version": "0.0.1",
   "private": true,
-  "author": "Chintan Prajapati",
+  "author": "Chintan Prajapati <chintanprajapati37@gmail.com> (https://zluck.com)",
+  "license": "MIT",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",

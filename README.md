@@ -3,7 +3,7 @@
 ## Project Installation
 ### 1. Git checkout / clone project
 ```sh
-$ git clone https://gitlab.com/zluck/mobile/react-native/zluck-rn-v2.git <ProjectName>
+$ git clone https://github.com/zlucksolutions/zluck-react-native.git <ProjectName>
 $ cd <ProjectName>
 ```
 ### 2. Rename Project  
@@ -16,21 +16,17 @@ $ npm install react-native-rename -g
 ```sh
 $ npx react-native-rename <ProjectName> -b <bundleIdentifier>
 ```
-### 3. Link react native libs and assets
-```sh
-npx react-native link
-```
-### 4. Install node modules / libraries
+### 3. Install node modules / libraries
 ```sh
 $ yarn  
     or  
 $ npm install
 ```
-### 5. Pod install
+### 4. Pod install
 ```sh
 npx pod-install ios
 ```
-### 6. Run Project
+### 5. Run Project
 
 Run the following command in a Terminal at root of source directory:
 
@@ -130,11 +126,10 @@ CocoaPods is built with Ruby and is installable with the default Ruby available 
 $ sudo gem install cocoapods
 ```
 
-
 ### Git Checkout
 
 ```base
-git clone https://gitlab.com/zluck/react-native/{app-name}.git {APP_NAME}
+git clone https://gitlab.com/{companyname or username}/{app-name}.git {APP_NAME}
 ```
 For latest code, please checkout branch `develop`
 
