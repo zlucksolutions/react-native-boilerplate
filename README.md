@@ -88,7 +88,7 @@ coming soon.....!
 # Todo
 - [ ] Axios
 - [ ] Firebaes Notification
-- [ ] React Navigation v5
+- [x] React Navigation v5
 - [ ] Fastlane  CI/CD
 
 #### -------- Remove above code once you clone the repo --------
