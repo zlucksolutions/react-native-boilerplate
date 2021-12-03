@@ -1,40 +1,23 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { goToDetails } from '../../actions/AppAction';
+import { Button, View, Text} from 'react-native';
+import { goToDetails } from '../../store/actions/detailsActions';
 import styles from './Styles/HomeStyle';
+import { useAppDispatch } from '../../utilities/storeHooks';
 
-export interface Props {
-  navigation: any;
-  goToDetailNav: typeof goToDetails;
-}
+const HomeScreen = () => {
+  const dispatch = useAppDispatch();
 
-function HomeScreen({ goToDetailNav }: Props) {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} >
       <Text>Home Screen</Text>
       <Button
         title="Go to Details"
         onPress={() => {
-          goToDetailNav();
+          dispatch(goToDetails({ name: 'Chintan' }));
         }}
       />
     </View>
   );
 }
 
-function mapStateToProps() {
-  return {};
-}
-
-function mapDispatchToProps(dispatch: any) {
-  return bindActionCreators(
-    {
-      goToDetailNav: goToDetails
-    },
-    dispatch
-  );
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
+export default HomeScreen;

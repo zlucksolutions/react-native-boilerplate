@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ZluckRNTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ZluckRNTests.m */; };
+		00F88BBCEB492A609CBCE634 /* libPods-ZluckRN-ZluckRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88414307D00CF962BDB17C65 /* libPods-ZluckRN-ZluckRNTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		400873F6FE11C2B734B9E0CF /* libPods-ZluckRN-ZluckRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4687395B58795A8D180D54 /* libPods-ZluckRN-ZluckRNTests.a */; };
+		3E592C7CDAC4B3F3004DC610 /* libPods-ZluckRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D22E4707B2BB273F1BF9F8CE /* libPods-ZluckRN.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BF6624704686FB78DE969CEB /* libPods-ZluckRN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B97577B172CB71D92AC608 /* libPods-ZluckRN.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,20 @@
 		00E356EE1AD99517003FC87E /* ZluckRNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZluckRNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ZluckRNTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZluckRNTests.m; sourceTree = "<group>"; };
-		05C5D44BA525AB84EFCF813F /* Pods-ZluckRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN.release.xcconfig"; path = "Target Support Files/Pods-ZluckRN/Pods-ZluckRN.release.xcconfig"; sourceTree = "<group>"; };
+		043BE47B22F8721BAB30B024 /* Pods-ZluckRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN.release.xcconfig"; path = "Target Support Files/Pods-ZluckRN/Pods-ZluckRN.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ZluckRN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZluckRN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ZluckRN/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ZluckRN/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ZluckRN/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ZluckRN/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ZluckRN/main.m; sourceTree = "<group>"; };
-		1C635BE1330DCDCAB2572297 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN-ZluckRNTests.debug.xcconfig"; path = "Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5F4687395B58795A8D180D54 /* libPods-ZluckRN-ZluckRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZluckRN-ZluckRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39231ADB3E246D60ED1243 /* Pods-ZluckRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN.debug.xcconfig"; path = "Target Support Files/Pods-ZluckRN/Pods-ZluckRN.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ZluckRN/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8861C2A98D7DBCE7D022E8C1 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN-ZluckRNTests.release.xcconfig"; path = "Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests.release.xcconfig"; sourceTree = "<group>"; };
-		B5369BD56320272EAF6D6D3A /* Pods-ZluckRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN.debug.xcconfig"; path = "Target Support Files/Pods-ZluckRN/Pods-ZluckRN.debug.xcconfig"; sourceTree = "<group>"; };
+		88414307D00CF962BDB17C65 /* libPods-ZluckRN-ZluckRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZluckRN-ZluckRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDD6CB92E1D10BB27F76E22 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN-ZluckRNTests.release.xcconfig"; path = "Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests.release.xcconfig"; sourceTree = "<group>"; };
+		B602E721EA20554AECA53B46 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZluckRN-ZluckRNTests.debug.xcconfig"; path = "Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D22E4707B2BB273F1BF9F8CE /* libPods-ZluckRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZluckRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F4B97577B172CB71D92AC608 /* libPods-ZluckRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZluckRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400873F6FE11C2B734B9E0CF /* libPods-ZluckRN-ZluckRNTests.a in Frameworks */,
+				00F88BBCEB492A609CBCE634 /* libPods-ZluckRN-ZluckRNTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6624704686FB78DE969CEB /* libPods-ZluckRN.a in Frameworks */,
+				3E592C7CDAC4B3F3004DC610 /* libPods-ZluckRN.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,22 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				F4B97577B172CB71D92AC608 /* libPods-ZluckRN.a */,
-				5F4687395B58795A8D180D54 /* libPods-ZluckRN-ZluckRNTests.a */,
+				D22E4707B2BB273F1BF9F8CE /* libPods-ZluckRN.a */,
+				88414307D00CF962BDB17C65 /* libPods-ZluckRN-ZluckRNTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		586747C431BDFA7105D5D3F5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B5369BD56320272EAF6D6D3A /* Pods-ZluckRN.debug.xcconfig */,
-				05C5D44BA525AB84EFCF813F /* Pods-ZluckRN.release.xcconfig */,
-				1C635BE1330DCDCAB2572297 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */,
-				8861C2A98D7DBCE7D022E8C1 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -133,7 +121,7 @@
 				00E356EF1AD99517003FC87E /* ZluckRNTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				586747C431BDFA7105D5D3F5 /* Pods */,
+				BC97AB197D7E1CACDA0BF8A7 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +137,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC97AB197D7E1CACDA0BF8A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A39231ADB3E246D60ED1243 /* Pods-ZluckRN.debug.xcconfig */,
+				043BE47B22F8721BAB30B024 /* Pods-ZluckRN.release.xcconfig */,
+				B602E721EA20554AECA53B46 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */,
+				8FDD6CB92E1D10BB27F76E22 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ZluckRNTests" */;
 			buildPhases = (
-				8670FC6380B44192D32D6BF7 /* [CP] Check Pods Manifest.lock */,
+				1230CCBDB1B3EFB863E5CE88 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				61C376CD61EB277CBC405319 /* [CP] Embed Pods Frameworks */,
-				FA8362B23AC77CB4E8DA2B51 /* [CP] Copy Pods Resources */,
+				F60D75F80E7B4C9065644FC1 /* [CP] Embed Pods Frameworks */,
+				48431BB93EA90DA7CED7A6C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ZluckRN" */;
 			buildPhases = (
-				088D664CBD512A2F7509BD1A /* [CP] Check Pods Manifest.lock */,
+				ADE53994FF00397D2A3ECC34 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				3137027A55181EE16A7F56DF /* [CP] Embed Pods Frameworks */,
-				5487330A1A5E4698357DA0B8 /* [CP] Copy Pods Resources */,
+				EAF9D58A38779009E1147EA6 /* [CP] Embed Pods Frameworks */,
+				C11DCC2ECA72BEE091E4331C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,80 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		088D664CBD512A2F7509BD1A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZluckRN-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3137027A55181EE16A7F56DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5487330A1A5E4698357DA0B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61C376CD61EB277CBC405319 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8670FC6380B44192D32D6BF7 /* [CP] Check Pods Manifest.lock */ = {
+		1230CCBDB1B3EFB863E5CE88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +287,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA8362B23AC77CB4E8DA2B51 /* [CP] Copy Pods Resources */ = {
+		48431BB93EA90DA7CED7A6C6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +302,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE53994FF00397D2A3ECC34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZluckRN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11DCC2ECA72BEE091E4331C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF9D58A38779009E1147EA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN/Pods-ZluckRN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F60D75F80E7B4C9065644FC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZluckRN-ZluckRNTests/Pods-ZluckRN-ZluckRNTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -429,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C635BE1330DCDCAB2572297 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */;
+			baseConfigurationReference = B602E721EA20554AECA53B46 /* Pods-ZluckRN-ZluckRNTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8861C2A98D7DBCE7D022E8C1 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */;
+			baseConfigurationReference = 8FDD6CB92E1D10BB27F76E22 /* Pods-ZluckRN-ZluckRNTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5369BD56320272EAF6D6D3A /* Pods-ZluckRN.debug.xcconfig */;
+			baseConfigurationReference = 4A39231ADB3E246D60ED1243 /* Pods-ZluckRN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05C5D44BA525AB84EFCF813F /* Pods-ZluckRN.release.xcconfig */;
+			baseConfigurationReference = 043BE47B22F8721BAB30B024 /* Pods-ZluckRN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

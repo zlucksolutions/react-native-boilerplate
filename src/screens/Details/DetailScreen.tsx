@@ -1,19 +1,23 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, View, Text } from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { reducerStateIF } from '../../redux/reducers';
+// import { useSelector } from 'react-redux';
+import { useAppSelector } from '../../utilities/storeHooks';
+
+import { UserDetails } from '../../api/types/types';
 import styles from './Styles/DetailStyle';
 
 export interface Props {
   navigation: any;
   name: string;
+  user: UserDetails;
 }
 
-const DetailScreen = ({ navigation, name }: Props) => {
+const DetailScreen: React.FC<Props> = ({ navigation, user }) => {
+  // user = useSelector((state: any) => state?.details?.user);
+  user = useAppSelector(state => state?.details?.user);
   return (
     <View style={styles.container}>
-      <Text>Detail Screen - {name} </Text>
+      <Text>Detail Screen - {user.name} </Text>
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
       <Button
@@ -28,14 +32,4 @@ const DetailScreen = ({ navigation, name }: Props) => {
   );
 };
 
-function mapStateToProps({ app }: reducerStateIF) {
-  return {
-    name: app.name
-  };
-}
-
-function mapDispatchToProps(dispatch: any) {
-  return bindActionCreators({}, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(DetailScreen);
+export default DetailScreen;
