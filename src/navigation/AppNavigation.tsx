@@ -5,10 +5,14 @@ import HomeScreen from '../screens/Home/HomeScreen';
 import DetailScreen from '../screens/Details/DetailScreen';
 
 const Tab = createBottomTabNavigator();
-
 const DashboardNavigation = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarLabelPosition: "beside-icon",
+        tabBarIconStyle: { display: "none" },
+      }}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Details" component={DetailScreen} />
     </Tab.Navigator>
