@@ -1,5 +1,5 @@
 # Zluck - React Native
-
+[![HitCount](http://hits.dwyl.com/imchintan/zluck-react-native.svg?style=flat)](http://hits.dwyl.com/imchintan/zluck-react-native)
 ## Project Installation
 ### 1. Git checkout / clone project
 ```sh
