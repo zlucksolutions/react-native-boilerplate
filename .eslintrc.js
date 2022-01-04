@@ -25,7 +25,8 @@ module.exports = {
       'error',
       {
         selector:
-          "CallExpression[callee.object.name='console'][callee.property.name!=/^(warn|error|info|trace|disableYellowBox|tron)$/]",
+          // eslint-disable-next-line prettier/prettier
+          'CallExpression[callee.object.name=\'console\'][callee.property.name!=/^(warn|error|info|trace|disableYellowBox|tron)$/]',
         message: 'Unexpected property on console object was called'
       }
     ],
@@ -47,5 +48,5 @@ module.exports = {
         noSortAlphabetically: true
       }
     ]
-  },
+  }
 };
