@@ -1,5 +1,4 @@
 /**
- * Project: Flash NextGen
  * Root Component
  */
 
@@ -15,7 +14,7 @@ import {
 import { Provider } from 'react-redux';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { NavigationContainer } from '@react-navigation/native';
-import store from './store';
+import store from './redux/store';
 import AppNavigation from './navigation/AppNavigation';
 import { navigationRef, isReadyRef } from './navigation/ReduxNavigation';
 import Styles from './theme/AppStyles';

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { reducerStateIF } from '../../redux/reducers';
+import { reducerStateIF } from '../../../redux/reducers';
 import styles from './Styles/DetailStyle';
 
 export interface Props {
@@ -16,10 +16,6 @@ const DetailScreen = ({ navigation, name }: Props) => {
       <Text>Detail Screen - {name} </Text>
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
-      <Button
-        title="Go to Details... again"
-        onPress={() => navigation.navigate('Details')}
-      />
       <Button
         title="Go back to first screen in stack"
         onPress={() => navigation.popToTop()}

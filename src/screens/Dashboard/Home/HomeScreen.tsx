@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button, View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { goToDetails } from '../../actions/AppAction';
+import { goToDetails } from '../../../redux/actions/AppAction';
 import styles from './Styles/HomeStyle';
 
 export interface Props {
