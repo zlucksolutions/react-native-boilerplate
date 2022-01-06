@@ -1,10 +1,16 @@
 import { combineReducers } from 'redux';
-import AppReducer, { appStateIF } from './AppReducer';
+import AppReducer, { AppStateIF } from './AppReducer';
+import RandomUserReducer, { RandomUserStateIF } from './RandomUserReducer';
 import NavigationReducer from './NavigationReducer';
 
-export interface reducerStateIF {
-  app: appStateIF;
+export interface ReducerStateIF {
+  app: AppStateIF;
+  randomUser: RandomUserStateIF;
   nav: any;
 }
 
-export default combineReducers({ app: AppReducer, nav: NavigationReducer });
+export default combineReducers({
+  app: AppReducer,
+  randomUser: RandomUserReducer,
+  nav: NavigationReducer
+});

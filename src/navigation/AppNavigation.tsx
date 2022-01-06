@@ -1,10 +1,16 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/Home/HomeScreen';
-import DetailScreen from '../screens/Details/DetailScreen';
+import SplashScreen from '../screens/SplashScreen';
+import HomeScreen from '../screens/Dashboard/Home/HomeScreen';
+import DetailScreen from '../screens/Dashboard/Details/DetailScreen';
 
-const Tab = createBottomTabNavigator();
+type BottomParamList = {
+  Home: undefined;
+  Details: undefined;
+};
+
+const Tab = createBottomTabNavigator<BottomParamList>();
 
 const DashboardNavigation = () => {
   return (
@@ -24,13 +30,26 @@ const DashboardNavigation = () => {
   );
 };
 
-const Stack = createNativeStackNavigator();
+type StackParamList = {
+  Splash: undefined;
+  Dashboard: undefined;
+};
+
+export type AppNavigationProps = StackParamList & BottomParamList;
+
+const Stack = createNativeStackNavigator<StackParamList>();
 
 const AppNavigation = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Details" component={DashboardNavigation} />
+      <Stack.Screen
+        options={{
+          title: 'Home'
+        }}
+        name="Splash"
+        component={SplashScreen}
+      />
+      <Stack.Screen name="Dashboard" component={DashboardNavigation} />
     </Stack.Navigator>
   );
 };

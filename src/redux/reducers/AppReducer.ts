@@ -1,18 +1,12 @@
-import * as types from '../../actions/types';
+import * as types from '../actions/types';
 
-export interface appStateIF {
-  name: string;
-}
+export interface AppStateIF {}
 
-const initialState: appStateIF = {
-  name: ''
-};
+const initialState: AppStateIF = {};
 
 const reducer = (state = initialState, action: any) => {
   switch (action.type) {
     case types.INIT_APP:
-    case types.GO_TO_DETAILS:
-      return { ...state, ...action.payload };
     default:
       return state;
   }
