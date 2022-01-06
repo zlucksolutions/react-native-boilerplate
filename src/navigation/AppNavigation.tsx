@@ -5,7 +5,12 @@ import SplashScreen from '../screens/SplashScreen';
 import HomeScreen from '../screens/Dashboard/Home/HomeScreen';
 import DetailScreen from '../screens/Dashboard/Details/DetailScreen';
 
-const Tab = createBottomTabNavigator();
+type BottomParamList = {
+  Home: undefined;
+  Details: undefined;
+};
+
+const Tab = createBottomTabNavigator<BottomParamList>();
 
 const DashboardNavigation = () => {
   return (
@@ -25,7 +30,14 @@ const DashboardNavigation = () => {
   );
 };
 
-const Stack = createNativeStackNavigator();
+type StackParamList = {
+  Splash: undefined;
+  Dashboard: undefined;
+};
+
+export type AppNavigationProps = StackParamList & BottomParamList;
+
+const Stack = createNativeStackNavigator<StackParamList>();
 
 const AppNavigation = () => {
   return (

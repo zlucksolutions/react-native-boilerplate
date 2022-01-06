@@ -1,8 +1,7 @@
+import { useNavigation } from '@react-navigation/native';
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { reducerStateIF } from '../../../redux/reducers';
+import { Button, View } from 'react-native';
+
 import styles from './Styles/DetailStyle';
 
 export interface Props {
@@ -10,28 +9,16 @@ export interface Props {
   name: string;
 }
 
-const DetailScreen = ({ navigation, name }: Props) => {
+export default function DetailScreen() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Text>Detail Screen - {name} </Text>
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Go back" onPress={() => navigation.goBack()} />
       <Button
         title="Go back to first screen in stack"
-        onPress={() => navigation.popToTop()}
+        onPress={() => navigation.navigate('Splash')}
       />
     </View>
   );
-};
-
-function mapStateToProps({ app }: reducerStateIF) {
-  return {
-    name: app.name
-  };
 }
-
-function mapDispatchToProps(dispatch: any) {
-  return bindActionCreators({}, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(DetailScreen);

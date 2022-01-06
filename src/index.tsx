@@ -43,6 +43,7 @@ const Root = () => (
       <NavigationContainer
         ref={navigationRef}
         onReady={() => {
+          // @ts-ignore
           isReadyRef.current = true;
         }}>
         <AppNavigation />

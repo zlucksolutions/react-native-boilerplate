@@ -1,36 +1,27 @@
-import * as React from 'react';
+import { useNavigation } from '@react-navigation/native';
+import React, { useEffect } from 'react';
 import { Button, View, Text } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { useDispatch } from 'react-redux';
+import { initApp } from '../redux/actions';
+export default function SplashScreen() {
+  const dispatch = useDispatch();
 
-export interface Props {
-  navigation: any;
-}
+  useEffect(() => {
+    dispatch(initApp());
+  }, [dispatch]);
 
-function HomeScreen({ navigation }: Props) {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
       <Button
-        title="Go to Details"
-        onPress={() => {
-          navigation.navigate('Dashboard');
-        }}
+        title="Go to Dashboard"
+        onPress={() => navigation.navigate('Dashboard')}
       />
     </View>
   );
 }
-
-function mapStateToProps() {
-  return {};
-}
-
-function mapDispatchToProps(dispatch: any) {
-  return bindActionCreators({}, dispatch);
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
 
 const styles = EStyleSheet.create({
   container: {

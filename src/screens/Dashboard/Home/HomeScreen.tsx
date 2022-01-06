@@ -1,40 +1,41 @@
 import * as React from 'react';
-import { Button, View, Text } from 'react-native';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { goToDetails } from '../../../redux/actions/AppAction';
+import { View, Text, FlatList, Image } from 'react-native';
+import { useSelector } from 'react-redux';
+import { ReducerStateIF } from '../../../redux/reducers';
 import styles from './Styles/HomeStyle';
 
-export interface Props {
-  navigation: any;
-  goToDetailNav: typeof goToDetails;
-}
-
-function HomeScreen({ goToDetailNav }: Props) {
+export default function HomeScreen() {
+  const { users } = useSelector((state: ReducerStateIF) => state.randomUser);
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => {
-          goToDetailNav();
-        }}
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        style={styles.userList}
+        data={users}
+        renderItem={({ item, index }) => (
+          <View
+            style={[
+              styles.userDetailRow,
+              index + 1 === users.length && styles.lastRow
+            ]}>
+            <Image
+              style={styles.userImg}
+              source={{ uri: item.picture.thumbnail }}
+            />
+            <View style={styles.userDetail}>
+              <Text style={styles.userName}>
+                {item.name.title} {item.name.first} {item.name.last}
+              </Text>
+              <Text style={styles.userAge}>
+                {item.gender} / {item.dob.age}
+              </Text>
+              <Text style={styles.userEmail}>{item.email}</Text>
+              <Text style={styles.userPhone}>{item.phone}</Text>
+            </View>
+          </View>
+        )}
+        keyExtractor={(item, index) => `user_${item.name.first}_${index}`}
       />
     </View>
   );
 }
-
-function mapStateToProps() {
-  return {};
-}
-
-function mapDispatchToProps(dispatch: any) {
-  return bindActionCreators(
-    {
-      goToDetailNav: goToDetails
-    },
-    dispatch
-  );
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
