@@ -1,5 +1,3 @@
-import { AxiosResponse } from 'axios';
-
 const axios = require('axios');
 /* Set base url for api */
 // axios.defaults.baseURL = API_URL;
@@ -17,7 +15,7 @@ axios.defaults.headers.common = {
  * Set header authorization
  * @param token     Authorization token
  */
-const setHeaderAuthorization = (token?: string) => {
+const setHeaderAuthorization = (token) => {
   if (token) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
   } else {
@@ -40,7 +38,7 @@ const cancelAllRequest = () => {
  * @param res   HTTP Response
  * @returns     Return data
  */
-const getResponse = (res?: any) => {
+const getResponse = (res) => {
   if (res && (res.status === 200 || res.status === 201 || res.status === 204)) {
     if (res.status === 201 || res.status === 204) {
       res.data = true;
@@ -55,7 +53,7 @@ const getResponse = (res?: any) => {
  * @param path      API url path
  * @param params    Request parameters
  */
-const get = (path: string, params?: any): Promise<AxiosResponse> => {
+const get = (path, params) => {
   return new Promise((resolve, reject) => {
     try {
       axios.get(path, { params }).then(getResponse).then(resolve).catch(reject);
@@ -70,7 +68,7 @@ const get = (path: string, params?: any): Promise<AxiosResponse> => {
  * @param path      API url path
  * @param params    Request parameters
  */
-const post = (path: string, params?: any): Promise<AxiosResponse> => {
+const post = (path, params) => {
   return new Promise((resolve, reject) => {
     try {
       axios
@@ -90,11 +88,7 @@ const post = (path: string, params?: any): Promise<AxiosResponse> => {
  * @param params    Request parameters
  * @param headers   Request headers
  */
-const put = (
-  path: string,
-  params?: any,
-  headers?: any
-): Promise<AxiosResponse> => {
+const put = (path, params, headers) => {
   return new Promise((resolve, reject) => {
     try {
       axios
@@ -108,11 +102,7 @@ const put = (
   });
 };
 
-const remove = (
-  path: string,
-  params?: any,
-  headers?: any
-): Promise<AxiosResponse> => {
+const remove = (path, params, headers) => {
   return new Promise((resolve, reject) => {
     try {
       axios

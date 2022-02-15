@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { View, Text, FlatList, Image } from 'react-native';
 import { useSelector } from 'react-redux';
-import { ReducerStateIF } from '../../../redux/reducers';
 import styles from './Styles/HomeStyle';
 
 export default function HomeScreen() {
-  const { users } = useSelector((state: ReducerStateIF) => state.randomUser);
+  const { users } = useSelector((state) => state.randomUser);
   return (
     <View style={styles.container}>
       <FlatList
@@ -17,7 +16,8 @@ export default function HomeScreen() {
             style={[
               styles.userDetailRow,
               index + 1 === users.length && styles.lastRow
-            ]}>
+            ]}
+          >
             <Image
               style={styles.userImg}
               source={{ uri: item.picture.thumbnail }}

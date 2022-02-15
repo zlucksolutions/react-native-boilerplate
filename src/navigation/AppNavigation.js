@@ -5,12 +5,7 @@ import SplashScreen from '../screens/SplashScreen';
 import HomeScreen from '../screens/Dashboard/Home/HomeScreen';
 import DetailScreen from '../screens/Dashboard/Details/DetailScreen';
 
-type BottomParamList = {
-  Home: undefined;
-  Details: undefined;
-};
-
-const Tab = createBottomTabNavigator<BottomParamList>();
+const Tab = createBottomTabNavigator();
 
 const DashboardNavigation = () => {
   return (
@@ -23,21 +18,15 @@ const DashboardNavigation = () => {
         },
         tabBarIconStyle: { display: 'none' },
         headerShown: false
-      }}>
+      }}
+    >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Details" component={DetailScreen} />
     </Tab.Navigator>
   );
 };
 
-type StackParamList = {
-  Splash: undefined;
-  Dashboard: undefined;
-};
-
-export type AppNavigationProps = StackParamList & BottomParamList;
-
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createNativeStackNavigator();
 
 const AppNavigation = () => {
   return (

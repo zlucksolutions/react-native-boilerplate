@@ -1,17 +1,11 @@
-import { UserIF } from '../../interfaces/User';
 import * as types from '../actions/types';
 
-export interface RandomUserStateIF {
-  users: UserIF[];
-  loader: boolean;
-}
-
-const initialState: RandomUserStateIF = {
+const initialState = {
   users: [],
   loader: false
 };
 
-const reducer = (state = initialState, action: any) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case types.GET_RANDOM_USERS_REQUEST:
       return { ...state, loader: true };

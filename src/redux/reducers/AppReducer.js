@@ -1,10 +1,8 @@
 import * as types from '../actions/types';
 
-export interface AppStateIF {}
+const initialState = {};
 
-const initialState: AppStateIF = {};
-
-const reducer = (state = initialState, action: any) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case types.INIT_APP:
     default:

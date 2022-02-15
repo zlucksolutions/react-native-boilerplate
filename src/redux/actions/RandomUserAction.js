@@ -1,11 +1,10 @@
-import { UserIF } from '../../interfaces/User';
 import * as types from './types';
 
 export const getUsersRequest = () => ({
   type: types.GET_RANDOM_USERS_REQUEST
 });
 
-export const getUsersSuccess = (users: UserIF[]) => ({
+export const getUsersSuccess = (users) => ({
   type: types.GET_RANDOM_USERS_SUCCESS,
   payload: { users }
 });

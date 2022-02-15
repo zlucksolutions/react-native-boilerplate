@@ -4,11 +4,6 @@ import { Button, View } from 'react-native';
 
 import styles from './Styles/DetailStyle';
 
-export interface Props {
-  navigation: any;
-  name: string;
-}
-
 export default function DetailScreen() {
   const navigation = useNavigation();
   return (

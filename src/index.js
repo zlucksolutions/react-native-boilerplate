@@ -3,14 +3,7 @@
  */
 
 import React from 'react';
-import {
-  View,
-  StatusBar,
-  Dimensions,
-  // Text,
-  // TextInput,
-  LogBox
-} from 'react-native';
+import { View, StatusBar, Dimensions, LogBox } from 'react-native';
 import { Provider } from 'react-redux';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { NavigationContainer } from '@react-navigation/native';
