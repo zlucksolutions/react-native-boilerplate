@@ -1,6 +1,8 @@
+import {API_URL} from '../../config';
+
 const axios = require('axios').default;
 /* Set base url for api */
-// axios.defaults.baseURL = API_URL;
+axios.defaults.baseURL = API_URL;
 const CancelToken = axios.CancelToken;
 let source = CancelToken.source();
 /* Set common header parameters */
