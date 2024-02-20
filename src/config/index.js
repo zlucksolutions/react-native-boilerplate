@@ -13,4 +13,4 @@ export const API_URL = APP_MODE !== 'PROD' ? STAGE_API_URL : PROD_API_URL;
 export const IOS_PACKAGE = 'com.zluckrn.demo';
 export const ANDROID_PACKAGE = 'com.zluckrn.demo';
 export const PACKAGE_NAME =
-  Platform.OS === 'ios' ? IOS_PACKAGE : ANDRerOID_PACKAGE;
+  Platform.OS === 'ios' ? IOS_PACKAGE : ANDROID_PACKAGE;
