@@ -6,7 +6,6 @@ import DetailScreen from '../screens/Dashboard/Details/DetailScreen';
 import { hideSplashScreen, initApp } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
-import DragDropScreen from '../components/DragDrop/DragDropScreen';
 
 const Tab = createBottomTabNavigator();
 
