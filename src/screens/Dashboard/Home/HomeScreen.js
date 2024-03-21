@@ -1,26 +1,30 @@
 import * as React from 'react';
-import { View, Text, FlatList, Image } from 'react-native';
-import { useSelector } from 'react-redux';
+import {View, Text, FlatList, Image} from 'react-native';
+import {useDispatch, useSelector} from 'react-redux';
 import styles from './Styles/HomeStyle';
+import {randomUserRequest} from '../../../redux/slices/randomUserSlice';
 
 export default function HomeScreen() {
-  const { users } = useSelector((state) => state.randomUser);
+  const dispatch = useDispatch();
+  React.useEffect(() => {
+    dispatch(randomUserRequest());
+  }, []);
+  const {users} = useSelector(state => state.randomUser);
   return (
     <View style={styles.container}>
       <FlatList
         showsVerticalScrollIndicator={false}
         style={styles.userList}
         data={users}
-        renderItem={({ item, index }) => (
+        renderItem={({item, index}) => (
           <View
             style={[
               styles.userDetailRow,
-              index + 1 === users.length && styles.lastRow
-            ]}
-          >
+              index + 1 === users.length && styles.lastRow,
+            ]}>
             <Image
               style={styles.userImg}
-              source={{ uri: item.picture.thumbnail }}
+              source={{uri: item.picture.thumbnail}}
             />
             <View style={styles.userDetail}>
               <Text style={styles.userName}>

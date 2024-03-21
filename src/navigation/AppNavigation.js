@@ -1,20 +1,22 @@
-import React, {useEffect} from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import SplashScreen from '../screens/SplashScreen';
+import React, { useEffect } from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Dashboard/Home/HomeScreen';
 import DetailScreen from '../screens/Dashboard/Details/DetailScreen';
-import {hideSplashScreen, initApp} from '../redux/actions';
-import {useDispatch} from 'react-redux';
+import { hideSplashScreen, initApp } from '../redux/actions';
+import { useDispatch } from 'react-redux';
+import SplashScreen from 'react-native-splash-screen';
+import DragDropScreen from '../components/DragDrop/DragDropScreen';
 
 const Tab = createBottomTabNavigator();
 
 const DashboardNavigation = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(initApp());
+    //  dispatch(initApp());
     setTimeout(() => {
-      dispatch(hideSplashScreen());
+      // dispatch(hideSplashScreen());
+      SplashScreen.hide();
     }, 2000);
   }, []);
 
@@ -26,7 +28,7 @@ const DashboardNavigation = () => {
           fontWeight: '500',
           fontSize: 15,
         },
-        tabBarIconStyle: {display: 'none'},
+        tabBarIconStyle: { display: 'none' },
         headerShown: false,
       }}>
       <Tab.Screen name="Home" component={HomeScreen} />

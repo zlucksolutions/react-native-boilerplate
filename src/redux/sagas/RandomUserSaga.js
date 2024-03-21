@@ -1,16 +1,15 @@
-import { Alert } from 'react-native';
-import { put, call, takeLatest } from 'redux-saga/effects';
-import * as RandomUserAction from '../actions/RandomUserAction';
-import * as types from '../actions/types';
-import { getUsers } from '../services/RandomUserService';
+import {Alert} from 'react-native';
+import {put, call, takeLatest} from 'redux-saga/effects';
+import * as RandomUserAction from '../slices/randomUserSlice';
+import {getUsers} from '../services/RandomUserService';
 
 function* getRandomUsers() {
   try {
     const res = yield call(getUsers);
     if (res) {
-      yield put(RandomUserAction.getUsersSuccess(res.results));
+      yield put(RandomUserAction.randomUserSuccess(res.results));
     } else {
-      yield put(RandomUserAction.getUsersFail());
+      yield put(RandomUserAction.randomUserFailure());
     }
   } catch (error) {
     if (error?.response?.data?.message) {
@@ -18,10 +17,10 @@ function* getRandomUsers() {
     } else {
       Alert.alert(error?.message);
     }
-    yield put(RandomUserAction.getUsersFail());
+    yield put(RandomUserAction.randomUserFailure());
   }
 }
 
 export default function* sagas() {
-  yield takeLatest(types.GET_RANDOM_USERS_REQUEST, getRandomUsers);
+  yield takeLatest(RandomUserAction.randomUserRequest.type, getRandomUsers);
 }
