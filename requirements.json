@@ -1,0 +1,86 @@
+{
+  "projectName": "React Native Boilerplate",
+  "description": "A React Native boilerplate project designed to provide a solid foundation for building scalable and maintainable mobile applications. The boilerplate promotes best practices, accelerates development, and ensures a consistent architecture across projects.",
+  "architecture": {
+    "pattern": "Feature-First with Domain-Driven Design (DDD)",
+    "description": "Emphasizes separation of concerns between the application's domain logic and its user interface [[3]] [[6]] [[9]].",
+    "structure": {
+      "src": {
+        "features": {
+          "[feature]": {
+            "components": "Feature-specific UI components",
+            "screens": "Feature-specific screens",
+            "domain": "Core business logic, entities, and use cases",
+            "infrastructure": "Adapters for external services (API calls, database access)",
+            "store": "Feature-specific state management",
+            "types": "Feature-specific TypeScript types"
+          }
+        },
+        "shared": {
+          "components": "Reusable UI components",
+          "hooks": "Custom React hooks",
+          "services": "Shared services (e.g., API client)",
+          "store": "Global state management",
+          "theme": "Theme-related configurations",
+          "utils": "Utility functions"
+        },
+        "navigation": "Navigation configuration",
+        "config": "Project-level configuration"
+      }
+    }
+  },
+  "developmentEnvironment": {
+    "description": "Provides a streamlined development experience with built-in tools and configurations for code quality, testing, and more [[8]].",
+    "codeQuality": {
+      "eslintPrettier": "Pre-configured ESLint and Prettier for code linting and formatting.",
+      "husky": "Husky integration for pre-commit hooks to enforce code quality checks before committing.",
+      "pathAliases": "Path aliases for cleaner and more maintainable import statements.",
+      "vscodeConfiguration": "Recommended VSCode settings and extensions for optimal development."
+    },
+    "testing": {
+      "jest": "Configured Jest for unit and integration testing.",
+      "reactNativeTestingLibrary": "React Native Testing Library for UI component testing.",
+      "msw": "MSW (Mock Service Worker) setup for mocking API responses during development and testing.",
+      "testUtilities": "Common test utilities and patterns for writing consistent and effective tests."
+    }
+  },
+  "themeSystem": {
+    "description": "A flexible and customizable theme system is required to support multiple brands and appearances.",
+    "features": {
+      "multipleBrandThemes": "Support for different brand-specific themes.",
+      "darkMode": "Dark and light mode variations for each brand theme.",
+      "themePersistence": "Mechanism to persist the user's theme preference (e.g., using AsyncStorage).",
+      "responsiveDesign": "Responsive design utilities for adapting the UI to different screen sizes and orientations."
+    }
+  },
+  "internationalization": {
+    "description": "The boilerplate should include internationalization (i18n) support for creating multi-lingual applications.",
+    "features": {
+      "reactI18next": "Integration with `react-i18next` library.",
+      "languageDetection": "Automatic language detection based on the user's device settings.",
+      "languagePersistence": "Persistence of the user's selected language.",
+      "rtlSupport": "Right-to-left (RTL) layout support.",
+      "formattingUtilities": "Utilities for number, date, and currency formatting based on the selected locale.",
+      "translationManagement": "A well-defined structure for managing translation files."
+    }
+  },
+  "stateManagement": {
+    "description": "Redux Toolkit should be used for state management, along with Redux Saga for handling asynchronous actions.",
+    "features": {
+      "reduxToolkit": "Redux Toolkit setup for simplified Redux development.",
+      "reduxSaga": "Redux Saga middleware for managing asynchronous operations.",
+      "reduxPersist": "Redux Persist with AsyncStorage to persist the Redux store.",
+      "apiErrorHandling": "Middleware for handling API errors and displaying user-friendly messages.",
+      "storeEncryption": "Encryption of sensitive data in the Redux store for enhanced security."
+    }
+  },
+  "environmentManagement": {
+    "description": "The boilerplate should support multiple environments (development, staging, production) with easy switching and secure variable handling.",
+    "features": {
+      "environmentSupport": "Support for at least three environments: Development, Staging, and Production.",
+      "runtimeSwitching": "Ability to switch between environments at runtime.",
+      "secureVariables": "Secure handling of environment variables, especially API keys and other sensitive information.",
+      "uiSwitcher": "A UI-based environment switcher for development builds to quickly change the active environment."
+    }
+  }
+}
