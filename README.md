@@ -2,6 +2,8 @@
 
 A modern, feature-first React Native boilerplate project designed to kickstart your mobile app development. This project follows best practices and includes a robust architecture that makes it easy to scale and maintain your application, perfect for teams working on large-scale projects.
 
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjBsanU1Z3hsNXgzZGI3cXBjNzZlc2R5MWlpMXhqOWJxZnl0NW02NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VLO8UdTcTpRJPYChrl/giphy.gif" alt="Alt Text" width="250" />
+
 ## Table of Contents
 - [ZluckLabs React Native Boilerplate](#zlucklabs-react-native-boilerplate)
   - [Table of Contents](#table-of-contents)
